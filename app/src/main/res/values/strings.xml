@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Regibici</string>
+    <string name="Login">Escribe tu usuario</string>
+    <string name="BtnLogin">Login</string>
+    <string name="password">Escribe tu constraseña</string>
+    <string name="Btbicicletas">Bicicletas</string>
+    <string name="Btregistrarbici">Registrar</string>
+    <string name="Btcambiar">Cambiar</string>
+    <string name="Btdenunciar">Denunciar</string>
+    <string name="Logo">Regibici</string>
+    <string name="BtnIngresar">Ingresar</string>
+    <string name="Crea">Crea una cuenta</string>
+
 </resources>

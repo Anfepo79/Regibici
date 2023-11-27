@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".CambiarActivity">
 
+    <Button
+        android:id="@+id/bt1Bicicletas"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Btbicicletas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btRegistrar"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.1"
+        android:hint="@string/Btregistrarbici"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btCambiar"
+        app:layout_constraintStart_toEndOf="@id/bt1Bicicletas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCambiar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.1"
+        android:hint="@string/Btcambiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btDenunciar"
+        app:layout_constraintStart_toEndOf="@id/btRegistrar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btDenunciar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Btdenunciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btCambiar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
