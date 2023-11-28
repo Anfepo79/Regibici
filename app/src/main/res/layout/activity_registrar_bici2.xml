@@ -8,30 +8,36 @@
     tools:context=".RegistrarBiciActivity2">
 
     <View
+        android:id="@+id/view5"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:background="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
+        android:id="@+id/view6"
         android:layout_width="wrap_content"
         android:layout_height="550dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/regibici"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/regibici"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
 
     <Button
         android:id="@+id/bt1Bicicletas"
@@ -78,5 +84,77 @@
         app:layout_constraintStart_toEndOf="@id/btCambiar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        app:layout_constraintBottom_toTopOf="@id/apellidos"/>
+
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Apellidos"
+        app:layout_constraintBottom_toTopOf="@+id/Fecha_compra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/Fecha_compra"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Fecha de compra"
+        app:layout_constraintBottom_toTopOf="@id/marca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+
+    <EditText
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="marca"
+        app:layout_constraintBottom_toTopOf="@id/tipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha_compra"/>
+
+    <EditText
+        android:id="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="tipo"
+        app:layout_constraintBottom_toTopOf="@id/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca" />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/serial_marco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo" />
+
+
+    <EditText
+        android:id="@+id/serial_marco"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Serial marco"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
