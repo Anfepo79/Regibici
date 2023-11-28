@@ -4,7 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/myblue"
     tools:context=".RegistrarBiciActivity2">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/regibici"/>
 
     <Button
         android:id="@+id/bt1Bicicletas"
@@ -16,14 +43,14 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.17"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btRegistrar"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.17"
         android:hint="@string/Btregistrarbici"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btCambiar"
@@ -34,7 +61,7 @@
         android:id="@+id/btCambiar"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.17"
         android:hint="@string/Btcambiar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btDenunciar"
@@ -50,5 +77,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btCambiar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.17" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
