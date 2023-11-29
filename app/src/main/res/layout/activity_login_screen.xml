@@ -4,25 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".RegistroActivity">
-
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/myblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
+    android:background="@color/myblue"
+    tools:context=".LoginScreen" >
 
     <View
-        android:id="@+id/fondoblanco"
-        android:layout_width="328dp"
-        android:layout_height="649dp"
+        android:id="@+id/fondoblanco4"
+        android:layout_width="330dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="216dp"
         android:background="@drawable/fondoblanco"
         android:radius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,25 +20,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.05"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:hint="@string/BtnLogin"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/regibiciLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/regibici"
+        app:layout_constraintBottom_toBottomOf="@id/fondoblanco"
+        app:layout_constraintDimensionRatio="W,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toTopOf="@+id/fondoblanco4"
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/etUser"
+        android:id="@+id/tbUser"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="364dp"
         android:autofillHints="emailAddress"
         android:background="#E8E8E8"
         android:hint="@string/Login"
@@ -57,31 +46,18 @@
         android:textColor="#333333"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fondoinicio"
         app:layout_constraintVertical_bias="0." />
 
-
-    <ImageView
-        android:id="@+id/fondoinicio"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:src="@drawable/regibici"
-        app:layout_constraintBottom_toBottomOf="@id/fondoblanco"
-        app:layout_constraintDimensionRatio="W,1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondoblanco"
-        app:layout_constraintVertical_bias="0.012" />
-
-
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/tbPassword"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="300dp"
         android:autofillHints="password"
         android:background="#E8E8E8"
         android:hint="@string/password"
@@ -92,21 +68,22 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUser"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.1" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnlogin4"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-
-        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="232dp"
+        android:hint="@string/BtnLogin"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.05" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
