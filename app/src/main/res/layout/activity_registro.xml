@@ -31,21 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.05"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:hint="@string/BtnLogin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
     <EditText
-        android:id="@+id/etUser"
+        android:id="@+id/tbName"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -54,13 +41,33 @@
         android:background="#E8E8E8"
         android:hint="@string/Login"
         android:inputType="text"
-        android:textColor="#333333"
+        android:text="@string/tbRegNombre"
+        android:textColor="@color/textGrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fondoinicio"
         app:layout_constraintVertical_bias="0." />
 
+
+    <EditText
+        android:id="@+id/tbLastName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="emailAddress"
+        android:background="#E8E8E8"
+        android:hint="@string/Login"
+        android:inputType="text"
+        android:text="@string/tbRegApellido"
+        android:textColor="@color/textGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondoinicio"
+        app:layout_constraintVertical_bias="0.109" />
 
     <ImageView
         android:id="@+id/fondoinicio"
@@ -76,24 +83,6 @@
         app:layout_constraintVertical_bias="0.012" />
 
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints="password"
-        android:background="#E8E8E8"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:textColor="#333333"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUser"
-        app:layout_constraintVertical_bias="0.029" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
@@ -105,8 +94,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
